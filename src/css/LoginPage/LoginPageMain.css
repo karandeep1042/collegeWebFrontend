@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.loginpagemaincontainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.loginpageformcontainer {
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    /* border: 1px solid #2c2c2c; */
+    box-shadow: 0 4px 8px 0 rgba(143, 143, 143, 0.2), 0 6px 20px 0 rgba(146, 146, 146, 0.19);
+}
+
+.loginpageformcontainerdiv1 {
+    width: 50%;
+    height: 100%;
+    background-color: #018dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginpageformcontainerdiv2 {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+
+.loginpageformcontainerdiv1info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.loginpageformcontainerdiv1info #img1 {
+    width: 70%;
+    height: 40%;
+}
+
+.loginpageformcontainerdiv1info label {
+    margin-top: 2vh;
+    font-size: 2.2rem;
+    color: white;
+}
+
+.loginpageformcontainerdiv1info label p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/*-------right side-------*/
+
+.loginpageformcontainerdiv2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginpageformcontainerdiv2info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 8vw;
+}
+
+.loginpageformcontainerdiv2info .login {
+    color: #0376d4;
+    font-size: 3.2rem;
+    font-weight: 00;
+}
+
+.loginpageformcontainerdiv2info #email {
+    height: 4.5vh;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-top: 7vh;
+    border-radius: 0 .3rem .3rem 0;
+    transition: .3s;
+    padding-left: 10px;
+    border-left: 5px solid #0376d4;
+    background-color: #f6f6f6;
+}
+
+.loginpageformcontainerdiv2info #password {
+    height: 4.5vh;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 1vh 0;
+    border-radius: 0 .3rem .3rem 0;
+    background-color: #f6f6f6;
+    padding-left: 10px;
+    border-left: 5px solid #0376d4;
+}
+
+.loginpageformcontainerdiv2info .togglerText {
+    color: #1b2b38;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+
+.loginpageformcontainerdiv2info .submit {
+    border: none;
+    outline: none;
+    padding: 1.3vh;
+    color: #018dff;
+    width: 100%;
+    margin-top: 3vh;
+    border-radius: 40px;
+    border: #018dff 2px solid;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    background: -webkit-linear-gradient(0deg, transparent 50%, #018dff 0%);
+    background-size: 200% 100%;
+    transition: .4s;
+}
+
+.loginpageformcontainerdiv2info .submit:hover {
+    background-position: -100.3% 0;
+    color: white;
+}
+
+.loginpageformcontainerdiv2info .submit:focus {
+    outline: 2px solid white;
+    outline-offset: -5px;
+}
+
+.loginpageformcontainerdiv3info .submit {
+    border: none;
+    outline: none;
+    padding: 1.3vh;
+    color: #018dff;
+    width: 100%;
+    margin-top: 3vh;
+    border-radius: 40px;
+    border: #018dff 2px solid;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    background: -webkit-linear-gradient(0deg, transparent 50%, #018dff 0%);
+    background-size: 200% 100%;
+    transition: .4s;
+
+}
+
+.loginpageformcontainerdiv3info .submit:hover {
+    background-position: -100.3% 0;
+    color: white;
+}
+
+.loginpageformcontainerdiv3info .submit:focus {
+    outline: 2px solid white;
+    outline-offset: -5px;
+}
+
+.btn-1 {
+    background: darken(red, 1.5%);
+    font-weight: 100;
+}
+
+.btn-1 rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+}
+
+.btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.loginpageformcontainerdiv2infoadminswitch {
+    display: flex;
+    gap: 1vw;
+    width: 100%;
+    align-items: center;
+}
+
+.form-switch {
+    font-size: 1.3rem;
+}
+
+.errormessage {
+    color: red;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    transition: .3s;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .loginpagemaincontainer {
+        height: 85vh;
+    }
+
+    .loginpageformcontainer {
+        flex-direction: column;
+        width: 80vw;
+        height: auto;
+    }
+
+    .loginpageformcontainerdiv1 {
+        width: 100%;
+        padding-top: 2vh;
+    }
+
+    .loginpageformcontainerdiv2 {
+        width: 100%;
+    }
+
+    .loginpageformcontainerdiv1info img {
+        width: 50%;
+    }
+
+    .loginpageformcontainerdiv1info label {
+        /* height: auto; */
+        font-size: 1.2rem;
+    }
+
+    .loginpageformcontainerdiv2info {
+        padding: 2vh 8vw;
+    }
+
+    .loginpageformcontainerdiv2info .login {
+        font-size: 2rem;
+    }
+
+    .loginpageformcontainerdiv2info #email {
+        margin-top: 2vh;
+        font-size: .9rem;
+    }
+
+    .loginpageformcontainerdiv2info #password {
+        margin-top: 2vh;
+        font-size: .9rem;
+    }
+
+    .loginpageformcontainerdiv2infoadminswitch {
+        gap: 10px;
+    }
+
+    .loginpageformcontainerdiv2info .togglerText {
+        font-size: .9rem;
+    }
+
+    .form-switch {
+        font-size: 1rem;
+    }
+}
+
+/*----otp page css ----*/
+.loginpageformcontainerdiv3info {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    width: 100%;
+    padding: 8vw;
+    position: relative;
+}
+
+.loginpageformcontainerdiv3info .otpheading {
+
+    color: #0376d4;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.loginpageformcontainerdiv3info .otpheadingdescription {
+    color: #767676;
+    margin-top: 1.5rem;
+}
+
+.loginpageformcontainerdiv3info #img2 {
+    width: 60%;
+    height: 30%;
+}
+
+.loginpageformcontainerdiv3info .otptextfielddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: .5vw;
+}
+
+.loginpageformcontainerdiv3info .otptextfielddiv input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.loginpageformcontainerdiv3info .otptextfielddiv input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.loginpageformcontainerdiv3info .otptextfielddiv .otptextfield {
+    height: 3.7rem;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #054c87;
+    font-size: 1.2rem;
+}
+
+.loginpageformcontainerdiv3info .otptextfielddiv .otptextfield:focus {
+    border: 1px solid #018dff;
+}
+
+.loginpageformcontainerdiv3info .otpresenddescription {
+    color: #575757;
+    margin-top: 1.2rem;
+}
+
+.loginpageformcontainerdiv3info .otpsendbtn {
+    background-color: #0376d4;
+    margin-top: 1.5rem;
+    color: #e7e7e7;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+}
+
+.backtologincontainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    transition: .3s;
+    margin-bottom: 1vh;
+}
+
+.otpbackbtncontainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.backtologincontainer:hover {
+    transform: translateX(-10px);
+}
+
+.backtologincontainer p {
+    color: grey;
+    margin: 0;
+}
+
+.backtologincontainer i {
+    color: #018dff;
+}
