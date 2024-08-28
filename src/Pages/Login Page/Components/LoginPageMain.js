@@ -3,7 +3,7 @@ import '../../../css/LoginPage/LoginPageMain.css'
 import img1 from '../../../Resources/davlogo-removebg-preview.png'
 import img2 from '../../../Resources/otpLogo.jpg'
 import { useNavigate } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { setFId } from '../../../redux/reducers/freducers'
 
 export default function LoginPageMain() {
@@ -39,12 +39,14 @@ export default function LoginPageMain() {
     }
 
     const checkcredential = async () => {
+        // console.log(document.getElementById('flexSwitchCheckDefault').checked);
 
         let data = {
             email: email,
             password: password,
             admin: document.getElementById('flexSwitchCheckDefault').checked
         }
+
         let res = await fetch(`http://localhost:4000/verifycredential`, {
             method: "POST",
             body: JSON.stringify(data),
@@ -53,12 +55,13 @@ export default function LoginPageMain() {
                 "Content-type": "application/json",
             },
         })
+
         res = await res.json();
 
         if (res.msg == "success") {
-            // console.log("Success");
             sendMail();
             enableotpbox();
+            console.log("Invalid user");
         } else {
             errorCounter += 2;
             console.log("Invalid user");
@@ -87,8 +90,6 @@ export default function LoginPageMain() {
             },
         })
         res = await res.json();
-        // console.log(res);
-        // console.log(res.fid);
         if (res.msg === "newuser") {
             //re-direct to form
             dispatch(setFId(res.fid))
@@ -129,8 +130,6 @@ export default function LoginPageMain() {
     }
 
     const enableotpbox = () => {
-        // const elements = document.getElementsByClassName("otptextfield");
-        // elements[otpinputcounter].focus();
         let loginbox = document.querySelector(".loginpageformcontainerdiv2info");
         loginbox.style.display = "none";
         let otpbox = document.querySelector(".loginpageformcontainerdiv3info");
@@ -144,6 +143,7 @@ export default function LoginPageMain() {
         let emailError = document.getElementById('emailerror');
         let checkbox = document.getElementById('flexSwitchCheckDefault');
 
+        console.log();
 
         if (elements[0].value === "") {
             errorCounter++;
@@ -195,9 +195,6 @@ export default function LoginPageMain() {
                     ++otpinputcounter;
                     elements[otpinputcounter].focus();
                 }
-            }
-            else if (e.keyCode === 13) {
-
             }
         } catch (error) {
 

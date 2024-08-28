@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.dashboardcontainer {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    background-color: #e6e6e6;
+
+}
+/***----------dashboard leftside header-------*/
+.dashboardcontainerleftside .dashboardcontainersidebar {
+    height: 100vh;
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #018dff;
+}
+
+.dashboardcontainerleftside .dashboardcontainersidebar img {
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+.dashboardcontainerleftside .dashboardcontainersidebar p {
+    color: antiquewhite;
+    font-size: 1.3rem;
+}
+
+/* -------------------rightside header---------------- */
+.dashboardcontainerrightside {
+    height: 100vh;
+    width: 82vw;
+    /* border: 1px solid red; */
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffcfc;
+    /* border: 1px solid #000; */
+    border-radius: 1rem;
+    height: 22vh;
+    width: 80.5vw;
+    gap: 5vw;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(143, 143, 143, 0.2), 0 6px 20px 0 rgba(146, 146, 146, 0.19);
+    margin: 1vh;
+
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderprofile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderprofile .dashboardcontainerheaderprofilepicimage {
+    margin-left: 1rem;
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderprofile .dashboardcontainerheaderprofiledeptandname {
+    border-left: 4px solid #018dff;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    height: 13vh;
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderprofile .dashboardcontainerheaderprofiledeptandname .name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(139, 139, 139);
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderprofile .dashboardcontainerheaderprofiledeptandname .dept {
+    font-size: 1.5em;
+    color: #018dff;
+    font-weight: bold;
+
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderaddactivitybutton {
+    margin-right: 1.5rem;
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderaddactivitybutton .addactivitybtn:hover {
+    padding: 1.1rem;
+    width: 9.2vw;
+
+}
+
+.dashboardcontainerrightside .dashboardcontainerheader .dashboardcontainerheaderaddactivitybutton .addactivitybtn {
+    background-color: #018dff;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 9vw;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px 0 rgba(109, 109, 109, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ------------right side table -------------- */
+.dashboardcontainerrightside .dashboardcontainertable {
+    /* border:1px solid #0f0f0f; */
+    height: 75vh;
+    width: 80.5vw;
+    margin: 1vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fffcfc;
+
+}
+
+.dashboardcontainerrightside .dashboardcontainertable table {
+    width: 100%;
+    /* background-color: #fffcfc; */
+}
+
+/* .dashboardcontainerrightside .dashboardcontainertable table th{
+    
+} */
+
+.dashboardcontainerrightside .dashboardcontainertable table thead {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: whitesmoke;
+    background-color: #018dff;
+    font-size: 1.1rem;
+}
+
+.dashboardcontainerrightside .dashboardcontainertable table td {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-size: 1.1rem;
+}
+
+.dashboardcontainerrightside .dashboardcontainertable table td .file {
+    font-size: .9rem;
+    border: none;
+    padding: .9vh;
+    background-color: #6cbdff;
+    /* background-color: rgb(184, 211, 184); */
+    border-radius: 1rem;
+}
+
+.dashboardcontainerrightside .dashboardcontainertable table td .edit {
+    font-size: .9rem;
+    border: none;
+    padding: .9vh;
+    background-color: rgb(181, 180, 180);
+    /* background-color: rgb(84, 221, 84); */
+    border-radius: 1rem;
+}
+
+.dashboardcontainerrightside .dashboardcontainertable table td .delete {
+    font-size: .9rem;
+    border: none;
+    padding: .9vh;
+    background-color: #ff3434;
+    border-radius: 1rem;
+}
+
+/**** --------- add activity form ---------****/
+.activityform {
+    display: none;
+    position: absolute;
+    top: 17%;
+    left: 23%;
+    border-left: .3rem solid #018dff;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(143, 143, 143, 0.2), 0 6px 20px 0 rgba(146, 146, 146, 0.19);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem;
+}
+
+.activityform .addactivityformname {
+    font-size: 2.7rem;
+    color: #018dff;
+}
+
+.activityform .exitbtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: red;
+    width: 6vh;
+    height: 3.9vh;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+.activityform .exitbtn:hover {
+    
+    background-color: #f22525c4;
+    width: 6vh;
+    height: 3.9vh;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
+.activityform .addactivityform {
+    margin-top: 2rem;
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.activityform .addactivityform .addactivityformrleftdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7vh;
+}
+
+.activityform .addactivityform .addactivityformrightdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7vh;
+}
+
+.activityform .addactivityform .addactivityformrleftdiv .activitylabel {
+    font-size: 1.2rem;
+}
+
+.activityform .addactivityform .addactivityformrleftdiv input,select {
+    outline: none;
+    border: none;
+    height: 5vh;
+    width: 21vw;
+    border-left: 5px solid #018dff;
+    background-color: #e3e3e3;
+    padding-left: .5rem;
+    padding-right: .8rem;
+}
+
+.activityform .addactivityform .addactivityformrightdiv .activitylabel {
+    font-size: 1.2rem;
+
+}
+
+.activityform .addactivityform .addactivityformrightdiv input{
+    outline: none;
+    border: none;
+    height: 5vh;
+    width: 21vw;
+    border-left: 5px solid #018dff;
+    background-color: #e3e3e3;
+    padding-left: .5rem;
+    padding-right: .8rem;
+}
+
+.activityform .addactivityformsubmitbutton {
+    margin-top:3rem ;
+}
+
+.activityform .addactivityformsubmitbutton input {
+    height: 6vh;
+    width: 10vw;
+    background-color:#018dff ;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+
+}
+.activityform .addactivityformsubmitbutton input:hover{
+    height: 6.2vh;
+    /* width: 11vw; */
+    /* font-size: 1.25rem; */
+    border: 1.2px solid #018dff;
+}

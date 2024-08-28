@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../../css/Module2/Form.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
@@ -45,8 +45,8 @@ export default function Form() {
     })
     res = await res.json();
     console.log(res);
-    if(res.msg=="success"){
-        navigate("/dashboard");
+    if (res.msg == "success") {
+      navigate("/dashboard");
     }
   }
 
@@ -102,7 +102,7 @@ export default function Form() {
           <div className="formpageheading">
             <p>User Details</p>
           </div>
-          <div className="formitem" style={{marginBottom:'25px'}}>
+          <div className="formitem" style={{ marginBottom: '25px' }}>
             <label htmlFor="">Username</label>
             <input type='text' className='formpageelements' id='userdetailsformusername' placeholder="hello" disabled />
           </div>

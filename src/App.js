@@ -7,13 +7,14 @@ import Dashboard from './Pages/Module3/Dashboard';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/userdetails" element={<UserForm />} />
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Dashboard/>
     </>
   );
 }
